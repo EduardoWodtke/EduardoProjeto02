@@ -56,9 +56,8 @@ const produtos = ref([
 
 let listaDeCompras = ref([])
 
-function adicionar (){
-    produtos.indexOf(produtos.id).value.push(listaDeCompras.value)
-    listaDeCompras.value = ""
+function adicionar(index){
+    produtos.value.push(listaDeCompras.value)
   }
 </script>
 
@@ -68,11 +67,6 @@ function adicionar (){
       <p>{{ item.nome }}</p>
       <p id="preco">{{ item.preco }}</p>
       <button @click="adicionar">Adicionar</button>
-    </div>
-    <div>
-      <div v-for="item in listaDeCompras" :key="item.id">
-      <p>{{ item.nome }}</p>
-      <p id="preco">{{ item.preco }}</p>
     </div>
   </div>
 </template>
