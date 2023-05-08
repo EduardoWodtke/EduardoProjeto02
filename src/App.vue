@@ -1,47 +1,78 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref } from 'vue'
+
+const produtos = ref([
+{
+id: 1,
+nome: 'Camiseta',
+preco: 49.9
+},
+{
+id: 2,
+nome: 'Calça',
+preco: 99.9
+},
+{
+id: 3,
+nome: 'Meia',
+preco: 9.9
+},
+{
+id: 4,
+nome: 'Sapato',
+preco: 199.9
+},
+{
+id: 5,
+nome: 'Boné',
+preco: 29.9
+},
+{
+id: 6,
+nome: 'Óculos',
+preco: 99.9
+},
+{
+id: 7,
+nome: 'Relógio',
+preco: 299.9
+},
+{
+id: 8,
+nome: 'Bermuda',
+preco: 79.9
+},
+{
+id: 9,
+nome: 'Cueca',
+preco: 19.9
+},
+{
+id: 10,
+nome: 'Meia',
+preco: 9.9
+}
+])
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+<div v-for="item in produtos" :key="item.id" id="container">
+<p >{{ item.nome }}</p>
+<p>{{ item.preco }}</p>
+</div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+*{
+margin: 0%;
+padding: 0%;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+p {
+font-weight: bolder;
+font-size: 18px;
+border-bottom: 2px solid black;
+padding: 10px;
 }
 </style>
+
