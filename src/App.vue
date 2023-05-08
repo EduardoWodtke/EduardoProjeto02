@@ -53,22 +53,30 @@ const produtos = ref([
     preco: 9.9
   }
 ])
+
+let listaDeCompras = ref([])
+
+function adicionar (){
+    produtos.value.push(listaDeCompras.value)
+
+  }
 </script>
 
 <template>
   <div class="produtos-container">
     <div v-for="item in produtos" :key="item.id">
       <p>{{ item.nome }}</p>
-      <p>{{ item.preco }}</p>
+      <p id="preco">{{ item.preco }}</p>
+      <button @click="adicionar">Adicionar</button>
     </div>
   </div>
 </template>
 
 <style scoped>
-* {
+/* * {
   margin: 0%;
   padding: 0%;
-}
+} */
 
 .produtos-container {
   display: grid;
@@ -81,6 +89,12 @@ p {
   font-weight: bolder;
   font-size: 18px;
   border-bottom: 2px solid black;
-  padding: 10px;
+  padding-bottom: 0px;
+  margin: 10px;
+}
+
+#preco{
+  font-weight: normal;
+  border-bottom: none;
 }
 </style>
