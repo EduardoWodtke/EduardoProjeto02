@@ -54,7 +54,7 @@ const produtos = ref([
   }
 ])
 
-let listaDeCompras = ref([{}])
+let listaDeCompras = ref([])
 
 function adicionar (){
     produtos.indexOf(produtos.id).value.push(listaDeCompras.value)
