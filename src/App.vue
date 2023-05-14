@@ -136,12 +136,12 @@ cestinha.value.total = 0
             <div v-for="(carrinhoItem, index) in cestinha.items" :key="index">              
               <strong> {{ carrinhoItem.id }} - {{ carrinhoItem.nome }}</strong>
               <hr>
-              <p>Preço BRL: {{ carrinhoItem.preco }} </p> 
+              <p>Preço Honey: {{ carrinhoItem.preco }} </p> 
               <p>Quantidade: {{ carrinhoItem.quantidade }} </p>
               <p>Preço: {{ carrinhoItem.total }}</p>
             </div>
             
-            <p v-if="cestinha.items.length > 0">Total: {{ cestinha.total }} BRL</p>
+            <p v-if="cestinha.items.length > 0">Total: {{ cestinha.total }} Honey</p>
             <p v-else>Nenhum Item</p>
           </div>
           <div class="modal-footer">
