@@ -181,14 +181,12 @@ cestinha.value.total = 0
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
  
-/* Estilo da barra superior */
 .barra {
 background-color: #FCD307;
 text-align: center;
 padding: 20px 0;
 }
 
-/* Estilo do título */
 h1 {
 color: #8C3F11;
 font-weight: bold;
@@ -196,7 +194,6 @@ font-size: 30px;
 text-shadow: 2px 2px #FCD307;
 }
 
-/* Estilo dos botões da lista de compras */
 .btn-primary {
 background-color: #FCD307;
 border-color: #FCD307;
@@ -243,7 +240,6 @@ color: #8C3F11;
 box-shadow: 0 0 0 0.2rem rgba(252, 211, 7, 0.5);
 }
 
-/* Estilo do modal */
 .modal-header {
 background-color: #FCD307;
 color: #8C3F11;
@@ -259,7 +255,6 @@ background-color: #F6F6F6;
 border-top: 0;
 }
 
-/* Estilo da lista de compras */
 .tema {
 background-color: #FFFFFF;
 border: 1px solid #EAEAEA;
